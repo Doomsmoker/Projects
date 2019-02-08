@@ -1,16 +1,17 @@
-10.upto(20) do |x|
-  print "#{x} "
-end
-print "\n"
+print "Welcome to the greencard lottery! Pick a number between 1 to 50: "
+ilucky = gets.strip.to_i
 
-20.downto(10) do |y|
-  print "#{y} "
-end
-print "\n"
+print "How many years we'll be trying? "
+inum = gets.strip.to_i
 
-1.upto(5) do |n|
-  n.times do
-    print "Hi! "
+1.upto(inum) do |inum|
+  puts "Playing year ##{inum}..."
+  x = rand(1..50)
+  puts "This year's winning number is #{x}... "
+  if x == ilucky
+    print "You've won!"
+    break
+  else
+    print "Sorry, not this time. \n"
   end
-  print "\n"
 end
