@@ -1,6 +1,6 @@
 str = "156"
 puts "Press Ctrl+С to abort at any time."
-puts str
+print str
 
 arr = str.split('')
 
